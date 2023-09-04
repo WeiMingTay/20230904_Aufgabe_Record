@@ -7,18 +7,15 @@
 1. Alle Eigenschaften von Records sind unveränderlich, sobald ein Record einmal erstellt wurde. Dies erscheint im ersten
    Augenblick als eine Einschränkung. Inwiefern ist dies für uns aber ein Vorteil? Nenne ein oder zwei Argumente.
 
-   `Leichtere Nachvollziehbarkeit, sicherer, weniger Nebeneffekte`
-
 ```
-Wenn ich ein Objekt vom Typ eines Record an eine Funktion/Methode übergebe, kann ich sicher sein, dass dieses Objekt danach noch genauso ist wie vor dem Aufruf der Methode.
+Leichtere Nachvollziehbarkeit, sicherer, weniger Nebeneffekte
 ```
 
 2. Was ist ein weiterer Vorteil von Records gegenüber Klassen?
 
-   `kürzerer Code: einfacher Lesbar`
 
 ```
-weniger Code, alle Standard-Methoden (equals, hashcode, toString) automatisch und korrekt definiert
+kürzerer Code: einfacher Lesbar, equals, hashcode, toString automatisch und korrekt definiert
 ```
 
 3. Ihr kommt neu in ein Developerteam, dass eine Immobilienverwaltung entwickelt. Es gibt einen Record `RealEstate`, der
@@ -39,10 +36,8 @@ RealEstate afterRaise=home.withPrice(75_000d);
 Ihr wisst, dass ein Record unveränderlich ist, die Methode
 sieht aber ähnlich zu einem Setter aus. Was macht diese Methode?
 
-`Es wird eine Kopie von home erstellt, Attribut price wird auf 75.000 gesetzt. Modifizierte Kopie wird unter afterRaise gespeichert`
-
 ```
-Die Methode erzeugt intern ein neues Objekt mit den Daten des ursprünglichen Objekt und des übergebenen Preises und gibt das erzeugte Objekt zurück.
+Es wird eine Kopie von home erstellt, Attribut price wird auf 75.000 gesetzt. Modifizierte Kopie wird unter afterRaise gespeichert
 ```
 
 ## Aufgabe: Zoo-Projekt
