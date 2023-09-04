@@ -11,6 +11,8 @@ public class Main {
         // Real Estate
         RealEstate rE1 = new RealEstate("irgendwo", 5, 60000);
         System.out.println(rE1);
+        RealEstate rE1Copy = rE1.withPrice(75_000d);
+        System.out.println(rE1Copy);
 
 
         // Owner
@@ -52,6 +54,6 @@ public class Main {
         Zoo zoo = new Zoo(animals);
         System.out.println(zoo);
 
-        System.out.println(zoo.foodTotal());
+        System.out.println("Gesamtbedarf pro Tag: "+zoo.foodTotal()/1000+"kg");
     }
 }

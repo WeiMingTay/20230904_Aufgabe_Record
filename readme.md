@@ -8,7 +8,7 @@
    Augenblick als eine Einschränkung. Inwiefern ist dies für uns aber ein Vorteil? Nenne ein oder zwei Argumente.
 
 ```
-Leichtere Nachvollziehbarkeit, sicherer, weniger Nebeneffekte
+Leichtere Nachvollziehbarkeit, sicherer, weniger Nebeneffekte. Werte sind final. Nicht veränderbar und somit sicherer/ keine unbewusste Manipulationen.
 ```
 
 2. Was ist ein weiterer Vorteil von Records gegenüber Klassen?
@@ -22,14 +22,14 @@ kürzerer Code: einfacher Lesbar, equals, hashcode, toString automatisch und kor
    für eine Immobilie steht. Dieser Record hat die Eigenschaften "address", "squareMeters", "numberOfRooms" und "price".
    Zusätzlich hat er eine Methode
 
-```java
+```
 public RealEstate withPrice(double price)
 ```
 
 Zum Beispiel wird es verwendet
 in
 
-```java
+```
 RealEstate afterRaise=home.withPrice(75_000d);
 ```
 
